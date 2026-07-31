@@ -13,20 +13,20 @@ class Rcm < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-aarch64-darwin.tar.gz"
-      sha256 "fd7af3c0d88724583a5c2bbba196b0b54ba5a77dd8e45a5a870e9df25032f112"
+      sha256 "23f1a1c55d3a426c90eb1202c5f995c821587d614c967f704cea47c70abe179e"
     else
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-x86_64-darwin.tar.gz"
-      sha256 "b62f2a66da210dce17df595eb7da28188f7fc82405c7c324ac8810506e6ebba4"
+      sha256 "62a2bab01976bee29ca73fab1f040d01ba6cb312f8a3b2ecd68233af7690bb2f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-aarch64-linux.tar.gz"
-      sha256 "a67ece474e173e2821ef3464c902349dd6f68ccd57929485c4b4710f3bb45853"
+      sha256 "78fc43faca0d5dd7b9d6007b07e20c41a9492eb6403aceeb0c5303e37a567ec8"
     else
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-x86_64-linux.tar.gz"
-      sha256 "4aaf3650ddb2118b4ce885b95e3d5d26cc7594f855ac97da6f80fd375b35aea3"
+      sha256 "43d2b4413d407dec86b0d76a01b430d9cb0bb69a216e1762587b084d22aa52fb"
     end
   end
 
