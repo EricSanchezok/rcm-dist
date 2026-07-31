@@ -1,7 +1,7 @@
 class Rcm < Formula
   desc "Composable AI pipelines with .rcm files"
   homepage "https://github.com/EricSanchezok/RCM"
-  version "0.1.9"
+  version "0.2.2"
   license "MIT"
 
   livecheck do
