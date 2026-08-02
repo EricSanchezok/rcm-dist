@@ -1,7 +1,7 @@
 class Rcm < Formula
   desc "Composable AI pipelines with .rcm files"
   homepage "https://github.com/EricSanchezok/RCM"
-  version "0.2.7"
+  version "0.2.8"
   license "MIT"
 
   livecheck do
@@ -13,20 +13,20 @@ class Rcm < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-aarch64-darwin.tar.gz"
-      sha256 "db50e065468ae9a4b5f837342937b6677f1c37215d707b67b35db640f5d11261"
+      sha256 "ec15643628b2ccd6da9e1557c1412d18684e28f7137c345ea8d01fb12858c3d2"
     else
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-x86_64-darwin.tar.gz"
-      sha256 "c3247eeed71ad99ffba425e67b9848deae47a9c8d963044746fe0f22275b32a4"
+      sha256 "9b528cd9e4e3f6d12fea70b747a9b12662ba9c2fd10feb2f964284182df2d8e6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-aarch64-linux.tar.gz"
-      sha256 "ed600f4477e6e94d6a8879dd6f15a61262e8ffee4bbcc863792ebfa25e199897"
+      sha256 "be2c964b41676d7995bd6a075f0ad7c2262e0aef9931c86400900741485d02fc"
     else
       url "https://github.com/EricSanchezok/rcm-dist/releases/download/v#{version}/accelerate-x86_64-linux.tar.gz"
-      sha256 "d5c8cf5686a49dc2e3781ad77ef7f526ec4d536e37ddec16c044c0ef8087c9d9"
+      sha256 "ef73a5d0866ec346a0df37839c697731d29f5a0f5c1a398bd0c0a636a5236684"
     end
   end
 
